@@ -1,21 +1,20 @@
 import React from 'react';
+import axios from 'axios';
 import './App.css';
-import Test from './test/test';
 
 function App() {
+
+  const getInfo = async () => {
+      const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=Kansk&appid=7185b8463e509a9f3b3686b5007206ee&units=metric')
+      console.log(response);
+      console.log('log');
+  }
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <p></p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={()=>getInfo()}>Click</button>
     </div>
   );
 }
