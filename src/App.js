@@ -1,20 +1,21 @@
-import React from 'react';
-import axios from 'axios';
-import './App.css';
+import React, {useState} from "react";
+import "./App.css";
+import Search from "./components/search/Search";
+import MainInfo from "./components/mainInfo/MainInfo";
 
 function App() {
 
-  const getInfo = async () => {
-      const response = await axios.get('https://api.openweathermap.org/data/2.5/weather?q=Kansk&appid=7185b8463e509a9f3b3686b5007206ee&units=metric')
-      console.log(response);
-      console.log('log');
+  const [weatherInfo, setWeatherInfo] = useState(null)
+
+  const handleSearch = (info) => {
+    setWeatherInfo(info)
+    console.log(info);
   }
-
-
 
   return (
     <div className="App">
-      <button onClick={()=>getInfo()}>Click</button>
+      <Search getInfoWeather={handleSearch}/>
+      {weatherInfo ? <MainInfo weatherInfo={weatherInfo}/> : <span>Ждем</span> }
     </div>
   );
 }
