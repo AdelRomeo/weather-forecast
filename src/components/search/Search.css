@@ -3,18 +3,19 @@
     justify-content: center;
     align-items: flex-end;
     width: 100%;
-    background: rgb(0, 119, 255);
-    padding: 20px 0;
+    background: linear-gradient(0deg, rgba(235,174,238,1) 0%, rgba(148,233,233,1) 100%);
+    padding: 30px 0;
 }
 
 .Search_input {
     font-size: 30px;
     margin-right: 10px;
     border-radius: 5px;
+    padding: 5px;
 }
 
 .Search_send {
-    height: 40px;
+    height: 48px;
     font-size: 15px;
     border-radius: 5px;
     cursor: pointer;

@@ -5,17 +5,20 @@ import MainInfo from "./components/mainInfo/MainInfo";
 
 function App() {
 
-  const [weatherInfo, setWeatherInfo] = useState(null)
+  //объет с информацией о погоде
+  const [weatherData, setWeatherData] = useState(null)
+
+  const num = [1,2,3]
 
   const handleSearch = (info) => {
-    setWeatherInfo(info)
+    setWeatherData(info)
     console.log(info);
   }
 
   return (
     <div className="App">
       <Search getInfoWeather={handleSearch}/>
-      {weatherInfo ? <MainInfo weatherInfo={weatherInfo}/> : <span>Ждем</span> }
+      {weatherData ? <MainInfo weatherData={weatherData} num={num}/> : <span>Ждем</span> }
     </div>
   );
 }
