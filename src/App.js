@@ -5,20 +5,18 @@ import MainInfo from "./components/mainInfo/MainInfo";
 
 function App() {
 
-  //объет с информацией о погоде
-  const [weatherData, setWeatherData] = useState(null)
+  //массив с объектами. каждый объет содержит погоду для одного города
+  const [weatherData, setWeatherData] = useState([])
 
-  const num = [1,2,3]
-
+  //вызывается в момент отправки формы (клик по конопке 'посмотреть погоду')
   const handleSearch = (info) => {
-    setWeatherData(info)
-    console.log(info);
+    setWeatherData(weatherData => [...weatherData, info])
   }
 
   return (
     <div className="App">
       <Search getInfoWeather={handleSearch}/>
-      {weatherData ? <MainInfo weatherData={weatherData} num={num}/> : <span>Ждем</span> }
+      {weatherData.length > 0 ? <MainInfo weatherData={weatherData}/> : <span>Ждем</span> }
     </div>
   );
 }
