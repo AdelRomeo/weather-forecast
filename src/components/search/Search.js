@@ -14,8 +14,10 @@ export default function Search({getInfoWeather}) {
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=7185b8463e509a9f3b3686b5007206ee`
     );
 
+    console.log(response);
+
     //выбиарем из ответа сервера нужные данные
-    const currentData = {...response.data.main, ...response.data.wind, cityName}
+    const currentData = {...response.data.main, ...response.data.wind, id: response.data.id, cityName}
     getInfoWeather(currentData);
   };
 
