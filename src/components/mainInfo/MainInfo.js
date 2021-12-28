@@ -1,8 +1,9 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimesCircle } from "@fortawesome/free-regular-svg-icons";
 import "./MainInfo.css";
 
-export default function MainInfo({ weatherData }) {
-
+export default function MainInfo({ weatherData, deletCard }) {
   //удаление лишних цифр в значениях (-21.11 => -21)
   const сutExcess = (num) => {
     const str = String(num);
@@ -17,7 +18,7 @@ export default function MainInfo({ weatherData }) {
 
   return (
     <div className="MainInfo_container">
-      {weatherData.map((item) => {
+      {weatherData.map((item, index) => {
         return (
           <div className="MainInfo_card" key={item.id}>
             <h2 className="MainInfo_city">{item.cityName}</h2>
@@ -35,6 +36,7 @@ export default function MainInfo({ weatherData }) {
                 <span>Ветер: {сutExcess(item.speed)}м/с</span>
               </li>
             </ul>
+            <button className="MainInfo_item-close" onClick={()=>deletCard(item)}><FontAwesomeIcon icon={faTimesCircle}/></button>
           </div>
         );
       })}
