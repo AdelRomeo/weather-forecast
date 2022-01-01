@@ -1,0 +1,37 @@
+.Waiting {
+    width: max-content;
+    background-color: #fff;
+    margin: 100px auto 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: opacity 1s ease;
+    box-shadow: 6px 4px 15px -1px rgba(0,0,0,0.75);
+    animation-duration: 1s;
+    animation-name: visible;
+}
+
+.Waiting_title {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1.7rem;
+    transition: font-size 1s ease;
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .Waiting_title {
+        font-size: 1.2rem;
+    }
+
+}
