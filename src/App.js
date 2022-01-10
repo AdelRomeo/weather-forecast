@@ -20,7 +20,7 @@ function App() {
   const handleSearch = (info) => {
     setWeatherData((weatherData) => [...weatherData, info]);
   };
-
+  
   //удаление карточки (клик по крестику)
   const handleDeletCard = (card) => {
     setWeatherData((weatherData) =>

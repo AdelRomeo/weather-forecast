@@ -11,7 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f6fed84-8680-4a90-bd1d-9eb821dcbd3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,12 +22,21 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="22eHOMBLVg9xmP4cVDUmTfkChUI" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,6 +58,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -83,7 +96,17 @@
       <workItem from="1641818711454" duration="367000" />
       <workItem from="1641819090336" duration="1918000" />
       <workItem from="1641821025768" duration="96000" />
-      <workItem from="1641821194666" duration="363000" />
+      <workItem from="1641821194666" duration="699000" />
+      <workItem from="1641821909518" duration="101000" />
+      <workItem from="1641822022514" duration="89000" />
+      <workItem from="1641822123315" duration="250000" />
+      <workItem from="1641822402656" duration="477000" />
+      <workItem from="1641822893537" duration="147000" />
+      <workItem from="1641823051614" duration="394000" />
+      <workItem from="1641823459391" duration="1064000" />
+      <workItem from="1641824556258" duration="122000" />
+      <workItem from="1641824688182" duration="239000" />
+      <workItem from="1641824938744" duration="1099000" />
     </task>
     <servers />
   </component>
@@ -103,10 +126,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="828" y="412" key="#ESLint" timestamp="1641819272769">
+    <state x="828" y="412" key="#ESLint" timestamp="1641824590396">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="828" y="412" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1641819272769" />
+    <state x="828" y="412" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1641824590396" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1640193716407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -119,5 +142,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1641819299646" />
+    <state width="1899" height="179" key="GridCell.Tab.0.bottom" timestamp="1641821589883">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="179" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1641821589883" />
+    <state width="1899" height="179" key="GridCell.Tab.0.center" timestamp="1641821589883">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="179" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1641821589883" />
+    <state width="1899" height="179" key="GridCell.Tab.0.left" timestamp="1641821589883">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="179" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1641821589883" />
+    <state width="1899" height="179" key="GridCell.Tab.0.right" timestamp="1641821589883">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="179" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1641821589883" />
   </component>
 </project>
